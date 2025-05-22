@@ -120,7 +120,7 @@ class SocketMonitorApp:
         
         # Send an initial newline character after connection
         self.log_message("Sending initial newline to scanner")
-        client_socket.send( b"\r\n\r\n")
+        client_socket.send(b"\r\n")
         
 
         try:
